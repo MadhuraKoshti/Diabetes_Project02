@@ -10,7 +10,8 @@ st.set_page_config(
 )
 
 # ---------------------- LOAD MODEL ----------------------
-model = pickle.load(open("model.pkl", "rb"))
+import joblib
+model = joblib.load("model.pkl")
 columns = pickle.load(open("columns.pkl", "rb"))
 
 # ---------------------- CSS ----------------------
